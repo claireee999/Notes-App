@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation"
+            app:startDestination="@id/mainFragment">
+    <fragment android:id="@+id/mainFragment"
+              android:name="ui.assignments.a4notes.ui.DisplayFragment"
+              android:label="main_fragment"
+              tools:layout="@layout/fragment_display">
+        <action android:id="@+id/mainToAdd"
+                app:destination="@id/addNoteFragment"/>
+        <action android:id="@+id/mainToEdit"
+                app:destination="@id/editNoteFragment"/>
+    </fragment>
+    <fragment android:id="@+id/addNoteFragment"
+              android:name="ui.assignments.a4notes.ui.AddFragment"
+              android:label="add_fragment"
+              tools:layout="@layout/fragment_add">
+        <action android:id="@+id/addToMain"
+                app:destination="@id/mainFragment"/>
+    </fragment>
+    <fragment android:id="@+id/editNoteFragment"
+              android:name="ui.assignments.a4notes.ui.EditFragment"
+              android:label="edit_fragment"
+              tools:layout="@layout/fragment_edit">
+        <action android:id="@+id/editToMain"
+                app:destination="@id/mainFragment"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        android:id="@+id/noteView"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:layout_width="265dp"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <TextView
+                android:paddingLeft="5dp"
+                android:id="@+id/noteview_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:maxLines="1"
+            />
+            <TextView
+                android:paddingLeft="5dp"
+                android:id="@+id/noteview_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:layout_marginBottom="10dp"
+            />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:gravity="right"
+                      android:layout_marginTop="5dp"
+        >
+            <Button
+                android:id="@+id/archiveBtn"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@color/purple_200"
+                android:text="@string/archive"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+            />
+            <Space android:layout_width="5dp"
+                   android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/deleteBtn"
+                android:layout_width="50dp"
+                android:textAlignment="center"
+                android:layout_height="40dp"
+                android:background="@color/purple_200"
+                android:text="@string/delete"
+                android:textColor="@color/white"
+            />
+            <Space android:layout_width="5dp"
+                   android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+

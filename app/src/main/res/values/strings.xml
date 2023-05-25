@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">A4 Notes - y44sheng</string>
+    <string name="addSymbol">+</string>
+    <string name="archive">A</string>
+    <string name="archived">Archived</string>
+    <string name="delete">D</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="show_archived">Show Archived?</string>
+    <string name="create">CREATE</string>
+    <string name="important">Important</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+</resources>
